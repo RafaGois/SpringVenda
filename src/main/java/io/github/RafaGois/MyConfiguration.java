@@ -5,8 +5,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
+
 @Configuration
-@Profile("development")//deixa acessivel apenas dquado o usuario for desenvolvimento
+//deixa acessivel apenas quando o usuario for desenvolvimento
+@Profile("desenvolvimento")
 public class MyConfiguration {
 
     @Bean
@@ -15,5 +17,4 @@ public class MyConfiguration {
             System.out.println("RODANDO A CONGIF DE DESENVOLVIMENTO");
         };
     }
-
 }
